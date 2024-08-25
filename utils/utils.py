@@ -70,6 +70,26 @@ class Portfolio:
             log_returns = np.log(1 + returns)
             return log_returns.mean()/log_returns.std()
 
+    def get_portf_volatility(self, buy_date = None, sell_date = None, tick = None, time = 'daily'):
+
+        if not buy_date:
+            buy_date = self.start_date
+
+        if not sell_date:
+            sell_date = self.end_date
+        
+        if not tick:
+            tick = self.prices.columns
+
+        tick = [t for t in tick if t in self.prices.columns]
+        prices = self.prices[tick].loc[buy_date:sell_date].dropna(axis = 1)
+
+        if time == 'daily':
+            agg_price = prices.dropna(axis = 1).sum(axis = 1)
+            returns = agg_price.pct_change()
+            log_returns = np.log(1 + returns)
+            return log_returns.std()
+
     def get_portf_sortino(self, buy_date = None, sell_date = None, tick = None, time = 'daily'):
         
         if not buy_date:
@@ -121,7 +141,8 @@ class Portfolio:
         self.get_indiv_returns()
         self.get_indiv_sharpe()
         self.get_indiv_sortino()
-        self.metrics = pd.concat([self.stock_sharpe, self.stock_sortino, self.stock_return], axis = 1)
+        self.get_indiv_volatility()
+        self.metrics = pd.concat([self.stock_sharpe, self.stock_sortino, self.stock_return, self.stock_volatility], axis = 1)
 
     def get_indiv_returns(self):
 
@@ -143,3 +164,8 @@ class Portfolio:
         sortino = pd.DataFrame(log_returns.mean()/neg_returns.std(), columns = ['Sortino'])
         self.stock_sortino = sortino
 
+    def get_indiv_volatility(self):
+        
+        log_returns = self.daily_log_returns
+        vol = pd.DataFrame(log_returns.std(), columns = ['Volatility'])
+        self.stock_volatility = vol

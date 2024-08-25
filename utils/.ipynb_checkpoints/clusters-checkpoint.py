@@ -178,8 +178,8 @@ def agglomerative_cluster(X, X_sharpe, port_test, method, k = 30, top = 1, scale
 
     output = {'portfolio': portfolio,
              'sharpe': sharpe_agglo,
-             'sortino': sharpe_agglo,
-             'return': sharpe_agglo}
+             'sortino': sortino_agglo,
+             'return': return_agglo}
     
     if cluster_metrics:
         output['silhouette'] = sil
