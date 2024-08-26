@@ -1,0 +1,31 @@
+Stock,Name,Year Established,Year of IPO,Industry,Market Cap Classification,Part of DJI
+FSLR,"First Solar, Inc.",1999,2006,Solar Technology,Large-Cap,No
+TSLA,"Tesla, Inc.",2003,2010,Automotive (Electric Vehicles),Mega-Cap,No
+SMCI,Super Micro Computer,1993,2007,Information Technology,Mid-Cap,No
+ENPH,"Enphase Energy, Inc.",2006,2012,Solar Technology,Large-Cap,No
+AXON,"Axon Enterprise, Inc.",1993 (as Taser),2001,Defense and Security,Large-Cap,No
+AMD,Advanced Micro Devices,1969,1972,Semiconductors,Large-Cap,No
+BLDR,"Builders FirstSource, Inc.",1998,2005,Building Products,Large-Cap,No
+MTCH,"Match Group, Inc.",2009,2015,Online Dating,Large-Cap,No
+FCX,Freeport-McMoRan Inc.,1988,1995,Mining,Large-Cap,No
+NVDA,NVIDIA Corporation,1993,1999,Semiconductors,Mega-Cap,No
+CF,"CF Industries Holdings, Inc.",1946,2005,Chemicals,Large-Cap,No
+PCG,PG&E Corporation,1905,1971,Utilities,Large-Cap,No
+NFLX,"Netflix, Inc.",1997,2002,Entertainment,Mega-Cap,No
+VRTX,Vertex Pharmaceuticals,1989,1991,Biotechnology,Large-Cap,No
+PODD,Insulet Corporation,2000,2007,Medical Devices,Mid-Cap,No
+LULU,Lululemon Athletica Inc.,1998,2007,Apparel,Large-Cap,No
+MGM,MGM Resorts International,1986,1993,Hospitality,Large-Cap,No
+CZR,Caesars Entertainment,1937,2020,Hospitality,Large-Cap,No
+MU,"Micron Technology, Inc.",1978,1984,Semiconductors,Large-Cap,No
+NRG,"NRG Energy, Inc.",1989,2000,Energy,Large-Cap,No
+NEM,Newmont Corporation,1921,1940,Mining,Large-Cap,Yes
+BBWI,"Bath & Body Works, Inc.",1990,1997,Retail,Large-Cap,No
+CTRA,Coterra Energy Inc.,1988,1993,Oil & Gas,Large-Cap,No
+VTRS,Viatris Inc.,2020,2020,Pharmaceuticals,Large-Cap,No
+UNH,UnitedHealth Group Incorporated,1977,1984,Health Insurance,Mega-Cap,Yes
+LUV,Southwest Airlines Co.,1967,1971,Airlines,Large-Cap,No
+ETSY,"Etsy, Inc.",2005,2015,E-commerce,Large-Cap,No
+INCY,Incyte Corporation,1991,1993,Biotechnology,Large-Cap,No
+DECK,Deckers Outdoor Corporation,1973,1993,Footwear,Mid-Cap,No
+BBY,"Best Buy Co., Inc.",1966,1985,Retail,Large-Cap,No
